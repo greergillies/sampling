@@ -10,10 +10,25 @@ Modify the number of repetitions in the simulation to 100 (from the original 100
 
 Alter the code so that it is reproducible. Describe the changes you made to the code and how they affected the reproducibility of the script file. The output does not need to match Whitby’s original blogpost/graphs, it just needs to produce the same output when run multiple times
 
-# Author: YOUR NAME
+# Author: Greer Gillies
 
 ```
-Please write your explanation here...
+Population of interest: every person in the city
+
+Sampling frame: 1000 wedding (200) and brunch (800) goers.
+
+10% (100 total) are randomly given a status of "infected".
+
+The model then randomly selects 20% of the infected population to undergo tracing (so 20% of the 10% that are infected, 20 total people). These 20 people are the sample.
+
+If one event has more than 2 infections, the entire sampling frame (n= 200 for wedding, n = 800 for brunch) is tested. 
+
+This code generates the true proportion of infections (e.g., model assumes the brunch goers can also be sampled from/contacted/traced) from weddings (approx 20%).
+
+This simulation is then run 1000 times. What can change on each iteration is the poroprtion of infected people at the brunch or wedding venues, and which of those infected people are traced. 
+
+Because there are 800 and 200 people at brunch and weddings, respectively, approx 20% of the infections will be from weddings, though an infection rate of 0 within the wedding group is possible from just random chance (e.g., the 100 infected people could all be from the brunch group).
+
 
 ```
 
@@ -39,9 +54,9 @@ Please write your explanation here...
     * Open a private window in your browser. Copy and paste the link to your pull request into the address bar. Make sure you can see your pull request properly. This helps the technical facilitator and learning support staff review your submission easily.
 
 Checklist:
-- [ ] Create a branch called `assignment-1`.
-- [ ] Ensure that the repository is public.
-- [ ] Review [the PR description guidelines](https://github.com/UofT-DSI/onboarding/blob/main/onboarding_documents/submissions.md#guidelines-for-pull-request-descriptions) and adhere to them.
+- [ x] Create a branch called `assignment-1`.
+- [ x] Ensure that the repository is public.
+- [ x] Review [the PR description guidelines](https://github.com/UofT-DSI/onboarding/blob/main/onboarding_documents/submissions.md#guidelines-for-pull-request-descriptions) and adhere to them.
 - [ ] Verify that the link is accessible in a private browser window.
 
 If you encounter any difficulties or have questions, please don't hesitate to reach out to our team via the help channel in Slack. Our Technical Facilitators and Learning Support staff are here to help you navigate any challenges.
