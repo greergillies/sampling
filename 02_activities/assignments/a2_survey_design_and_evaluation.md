@@ -8,9 +8,15 @@ The goal of this assignment is to practice developing and evaluating sampling ma
 
 Select one of the scenarios below and design a survey to meet the need(s) outlined in the prompt.
 
+
 1.	In two to three sentences, describe the purpose of your survey
+
 2.	Describe your target population, sampling frame, sampling units, and overall sampling strategy.
+
 3.	Write a 5-10 question survey to address your chosen scenario below.
+
+
+
 
 ##### Scenarios
 1.	You work in the Human Resources Department at a large tech company. Over the past few months, the company has been experiencing a high turnover rate across many of its departments, specifically within the entry- and lower-level positions. The company wishes to understand why this turnover is happening, and what changes need to occur to improve employee satisfaction.
@@ -40,39 +46,91 @@ For the **Canadian General Social Survey on Giving, Volunteering, and Participat
 
 ## Part A - Survey Design: 
 
-The number of your chosen topic: `#`
+The number of your chosen topic: 3
 
 Describe the purpose of your survey:
-```
-write your answer here...
-```
+
+Examine how age is related to music taste, comparing across age groups and within individuals. For the first part of the question, this would involve comparing people of different age groups on their music preferences (e.g., artists listened to, genres, etc.). For the latter part of the question, this involves gathering a music listening/taste history for respondents and seeing how preferences change over time.
 
 Describe your target population, sampling frame, sampling units, and observational units:
-```
-write your answer here...
-```
+
+Target population: people aged 18-60 in North America (US and Canada). I would use an online recruiting service such as Prolific to obtain a sample of individuals across a large age range (sampling frame). I would set restrictions such that each age group is equally represented in the final sample. This is technically a convenience sample but with more control over sample parameters (age restrictions, etc.). The sampling units are the individual respondants on Prolific who filled out the survey. 
 
 Your 5-10 question survey:
-```
-1. write your question here...
-2. write your question here...
-3. write your question here...
-4. write your question here...
-5. write your question here...
-6. write your question here... (optional)
-7. write your question here... (optional)
-8. write your question here... (optional)
-9. write your question here... (optional)
-10. write your question here... (optional)
-```
+
+i. What year were you born? (drop down list)
+
+ii. How do you primarily listen to music?
+    a) CDs, records, or other physical media
+    b) The radio (standard or satelite)
+    c) A paid streamining service
+    d) A free streaming service 
+    e) Purchased digitally via another platform (e.g., bandcamp)
+
+iii. Please list the last 10 albums you purchased, downloaded, or streamed (please only list albums where you have listened to at least 50% of the entire album)
+(artist name) (album title) (year of purchase)
+(option to leave blank if they have not purchased 10 albums)
+
+iv. What genres of music do you listen to the most? Please list the top 3.
+(drop down list, option to leave blank if < 3 genres are listened to)
+
+v. List the concerts you attended this year. If you didn't attend any concerts, leave this section blank.
+(artist name) (tour name (if applicable))
+
+vi. What was the first album you remember purchasing, and how old were you?
+(artist name) (album name) (age)
+
+vii. What was the best concert you remember attending, and how old were you?
+(artist name) (age)
 
 ## Part B - Survey Evaluation:
 
 Identify and describe survey features:
 
-```
-write your answer here
-```
+1. Sample type
+Startified sample with probability sampling.
+Strata are set up by geographical area within the provinces.
+Random sampling occurred within the final strata such that the final sample was representative of all 10 provinces.
+
+2. Sample size
+16,800 (~42% of 40,000)
+
+3. Target population
+All people living in Canada (all provinces) over the age of 15 who have not lived in an institution (hospital, care home, etc.) for > 6 months.
+
+4. Sampling frame
+A list of addresses with phone numbers (primarily gathered from census data and other sources). One person from the address will be surveyed if that house is selected.
+
+5. Survey mode(s) 
+Electronic questionnaire or telephone interview.
+
+6. Timeline
+44 minutes per survey.
+Approx 4 months to complete the survey process.
+
+7. Response rate
+Expected 24,000 surveys returned from 40,000. Actual return rate was 42%.
+
+8. Weights
+Each person in the sample represents a much larger number of people, each participant is weighted such that it reflects the real-world prevalence of certain population characteristics.
+
+9. Data processing
+Data was processed vusing a social survey processing environment (SSPE), which I'm pretty sure is some kind of software/program like SPSS or JASP(?)
+
+10. Cleaning, imputation, etc
+Data is cleaned using automatic checks done by a computer (e.g., matching age to birthdate) and manual checks done by a human. Most issues were resolved during the survey by the system used to administrate it (i.e., flagging out of range values for certain questions) (the CATI system)
+
+Missing items were filled with imputation, where data from the respondant who best matched the respondant with missing data was used. When there was no "nearest respondant", they used mean imputation (values replaced with the sample average)
+
+11. Sources of error
+Participants may write incorrect information, obviously wrong/impossible answers were corrected by CATI in-interview.
+Sampling error (e.g., non-response, can only sample from people who have done the census, self selection bias etc.)
+
+12. Limitations, known biases, etc
+Non-response or non-sampling are some of the known sources of error, and can occur at many stages in the survey (failure to do the census, did not fill out the form, etc.) If people do not have a phone number, they cannot be contacted.
+
+13. Link to documentation and any additional sources used
+I did not use any additional sources.
 
 ## Rubric
 
